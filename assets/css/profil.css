@@ -1,0 +1,518 @@
+/* ==========================================
+   STYLING MODUL PROFIL SEKOLAH (SMAN 1 SUBAH)
+   ========================================== */
+
+/* --- 1. KOMPONEN KONTAINER UTAMA --- */
+.visi-misi-card,
+.fasilitas-section,
+.akreditasi-box,
+.guru-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.akreditasi-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* --- 2. KOMPONEN KARTU GENERAL --- */
+.fasilitas-card,
+.prestasi-card,
+.guru-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fasilitas-card:hover,
+.prestasi-card:hover,
+.guru-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fasilitas-img-wrapper img,
+.guru-img-wrapper img,
+.kepsek-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- 3. VISI & MISI --- */
+.section-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.visi-wrapper {
+  text-align: center;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.visi-quote {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.section-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.misi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.misi-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 0.9rem 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #f59e0b;
+}
+
+.misi-num {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #f59e0b;
+  min-width: 30px;
+}
+
+.misi-list p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+/* --- 4. FASILITAS --- */
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.fasilitas-img-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.fasilitas-img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.fasilitas-card:hover .fasilitas-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.fasilitas-body {
+  padding: 1.2rem;
+}
+
+.fasilitas-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fasilitas-title i {
+  color: #0284c7;
+}
+
+/* --- 5. AKREDITASI & PRESTASI --- */
+.akreditasi-banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #0a2540 0%, #0284c7 100%);
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1.2rem;
+}
+
+.badge-grade {
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+  flex-shrink: 0;
+}
+
+.akreditasi-details h4 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.akreditasi-details p {
+  margin: 0.2rem 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.prestasi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.prestasi-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prestasi-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+.prestasi-tag {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+}
+
+.prestasi-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.prestasi-desc {
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --- 6. GURU & TENAGA KEPENDIDIKAN --- */
+.kepsek-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #0a2540 0%, #0284c7 100%);
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.kepsek-img-wrapper {
+  width: 160px;
+  height: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  background-color: #cbd5e1;
+}
+
+.kepsek-info h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.4rem 0;
+}
+
+.kepsek-role {
+  display: inline-block;
+  background-color: #f59e0b;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.kepsek-quote {
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.guru-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.guru-card {
+  text-align: center;
+}
+
+.guru-img-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guru-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+.guru-card:hover .guru-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.guru-body {
+  padding: 1.5rem 1rem;
+}
+
+.guru-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --- 7. RESPONSIF (MEDIA QUERIES) --- */
+@media (max-width: 1024px) {
+  .guru-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .fasilitas-grid,
+  .prestasi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .guru-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kepsek-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .akreditasi-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .fasilitas-grid,
+  .prestasi-grid,
+  .guru-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   STYLING STRUKTUR ORGANISASI
+   ========================================== */
+
+.org-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.org-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.badge-instansi {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.org-header h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.org-header p {
+  font-size: 0.92rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.org-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.org-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.org-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+  flex: 1 1 260px;
+  max-width: 300px;
+}
+
+.org-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  border-color: #94a3b8;
+}
+
+.leader-card {
+  max-width: 380px;
+  flex: 1 1 350px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: #bbf7d0;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #dcfce7;
+  color: #16a34a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.card-icon.secondary {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.card-icon.accent {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.jabatan {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+}
+
+.nama {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #0f172a;
+  white-space: normal !important;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+.status-aktif {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .org-card, .leader-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
